@@ -7,19 +7,33 @@
 body {
   background-color: hsl(200deg 20% 97%);
 }
-header {
+header, /*header I consider it the same as an id conceptually*/
+#navigation,
+#list {
   position: relative;
   background-color: white;
-  height: 64px;
   padding: 5px;
   box-shadow: 10px 0px 5px #dedede;
 }
 #logo {
   display: inline-block;
   font-size: 48px;
-  text-align: center;
-  margin-block-end: 0;
-  margin-block-start: 0;
   position: absolute;
   left: 56px;
+}
+#container {
+  width: 70vw;
+  margin: 10% auto;
+}
+#navigation,
+#list {
+  padding: 10px 40px;
+}
+.bot.one {
+  background-color: hsl(204deg 86% 61%);
+}
+.bot {
+  border: 2px solid hsl(204deg 86% 78%);
+  border-radius: 5px;
+  padding: 3px;
 }
