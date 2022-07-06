@@ -9,11 +9,11 @@ body {
 }
 header, /*header I consider it the same as an id conceptually*/
 #navigation,
-#list {
+#listbook {
   position: relative;
   background-color: white;
   padding: 5px;
-  box-shadow: 10px 0px 5px #dedede;
+  box-shadow: 5px 10px 5px #dedede;
 }
 #logo {
   display: inline-block;
@@ -24,10 +24,12 @@ header, /*header I consider it the same as an id conceptually*/
 #container {
   width: 70vw;
   margin: 10% auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #navigation,
-#list {
+#listbook {
   padding: 10px 40px;
+  margin: 5px;
 }
 .bot.one {
   background-color: hsl(204deg 86% 61%);
@@ -37,9 +39,7 @@ header, /*header I consider it the same as an id conceptually*/
   border-radius: 5px;
   padding: 3px;
 }
-.sum::before {
-  content: "\2193";
-}
+
 ul {
   list-style: none;
   padding-inline-start: 0px;
@@ -48,17 +48,63 @@ li {
   margin: 5px 0;
 }
 .cross::before {
+  font-size: small;
   content: "\2715";
   color: red;
   border: 1px solid red;
-  padding: 2px 3.97px;
+  padding: 2px 4.2px;
   border-radius: 50%;
+  margin-right: 5px;
 }
 .check::before {
+  font-size: small;
   content: "\2713";
   border: 1px solid green;
   color: green;
-  padding: 2px 4.52px;
+  padding: 2px 4.625px;
   border-radius: 50%;
+  margin-right: 5px;
 }
 /*  becose the element inserted before content, instead of be inside a specific container, I adjust the padding based on the font of the symbol used*/
+.triangle {
+  font-size: small;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: relative;
+  top: -5px;
+}
+.list {
+  margin: 20px 0px;
+}
+.li {
+  margin-bottom: 20px;
+}
+.sum {
+  font-size: x-large;
+}
+.but {
+  font-size: 10px;
+  margin: 0 10px;
+  border-radius: 12px;
+  padding: 7px;
+  border: 0px;
+  color: white;
+}
+.blue {
+  background-color: hsl(203deg 80% 59%);
+}
+.purple {
+  background-color: hsl(262deg 68% 67%);
+}
+.acquamarine {
+  background-color: hsl(165deg 42% 57%);
+}
+.orange {
+  background-color: hsl(34deg 88% 57%);
+}
+.violet {
+  background-color: hsl(328deg 60% 62%);
+}
+.oliva {
+  background-color: hsl(69deg 68% 47%);
+}
