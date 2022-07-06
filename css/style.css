@@ -37,3 +37,28 @@ header, /*header I consider it the same as an id conceptually*/
   border-radius: 5px;
   padding: 3px;
 }
+.sum::before {
+  content: "\2193";
+}
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+li {
+  margin: 5px 0;
+}
+.cross::before {
+  content: "\2715";
+  color: red;
+  border: 1px solid red;
+  padding: 2px 3.97px;
+  border-radius: 50%;
+}
+.check::before {
+  content: "\2713";
+  border: 1px solid green;
+  color: green;
+  padding: 2px 4.52px;
+  border-radius: 50%;
+}
+/*  becose the element inserted before content, instead of be inside a specific container, I adjust the padding based on the font of the symbol used*/
