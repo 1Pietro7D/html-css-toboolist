@@ -15,7 +15,7 @@
       <h1 id="logo">Taboolist</h1>
     </header>
     <!-- /header: logo with title -->
-    <!-- main: contenitor with nav and section with list -->
+    <!-- main: contenitor with nav and section with details list -->
     <main id="container">
       <!--nav-->
       <nav id="navigation">
@@ -25,68 +25,56 @@
       <!--/nav-->
       <section id="listbook">
         <!-- list1 -->
-        <ul>
-          <li class="list">
-            <h3 class="sum">
-              <span class="triangle">&#9698;</span>
-              New Task
-            </h3>
-            <ul>
-              <li class="li check">
-                Quartely Newsletter<button class="but blue">editorial</button>
-              </li>
-            </ul>
-          </li>
-          <!-- /list1 -->
-          <!-- /list2 -->
-          <li class="list">
-            <h3 class="sum">
-              <span class="triangle">&#9698;</span>
-              Today
-            </h3>
-            <ul>
-              <li class="li check">
-                Recruting blog post <button class="but blue">editorial</button>
-              </li>
-              <li class="li check">
-                Mobile app launch<button class="but purple">Q1 Goals</button>
-              </li>
-              <li class="li cross">
-                Interview John H.<button class="but acquamarine">
-                  Rescruting
-                </button>
-              </li>
-              <li class="li check">
-                Summit update to mobile storefronts<button class="but orange">
-                  Mobile
-                </button>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
-        <!-- /list2 -->
-        <!-- /list3 -->
-        <div class="list">
-          <h3 class="sum">
-            <span class="triangle">&#9698;</span>
-            Upcoming
-          </h3>
+        <details open>
+          <summary><strong>New task</strong></summary>
           <ul>
-            <li class="li cross">Schedule meeting with Alex</li>
-            <li class="li check">
-              Homepage refresh<button class="but violet">Website</button>
-            </li>
-            <li class="li check">
-              Onboard new Sales members<button class="but oliva">Sales</button>
-            </li>
-            <li class="li check">
-              Review editorial calendar<button class="but blue">
-                editorial
-              </button>
+            <li class="check">
+              Quartely Newsletter<span class="but blue">Editorial</span>
             </li>
           </ul>
-        </div>
+        </details>
+        <!-- /list1 -->
+
+        <!-- list2 -->
+        <details open>
+          <summary><strong>Today</strong></summary>
+          <ul>
+            <li class="check">
+              Recruiting blog post<span class="but blue">Editorial</span>
+            </li>
+            <li class="check">
+              Mobile app launch<span class="but purple">Q1 Goals</span>
+            </li>
+            <li class="cross">
+              Interview John H.<span class="but acquamarine">Recruiting</span>
+            </li>
+            <li class="check">
+              Summit update to mobile storefronts<span class="but orange"
+                >Mobile</span
+              >
+            </li>
+          </ul>
+        </details>
+        <!-- /list2 -->
+
+        <!-- list3 -->
+        <details open>
+          <summary><strong>Upcoming</strong></summary>
+          <ul>
+            <li class="cross">Schedule meeting with Alex</li>
+            <li class="check">
+              Homepage refresh<span class="but violet">Website</span>
+            </li>
+            <li class="check">
+              Onboard new Sales team members<span class="but oliva"
+                >Editorial</span
+              >
+            </li>
+            <li class="check">
+              rewiew editorial calendar<span class="but blue">Editorial</span>
+            </li>
+          </ul>
+        </details>
         <!-- /list3 -->
       </section>
     </main>

@@ -1,3 +1,5 @@
+/***** Generics *****/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,16 +7,45 @@
 }
 /*reset css*/
 body {
-  background-color: hsl(200deg 20% 97%);
+  background-color: rgba(154, 160, 163, 0.945);
+  font-family: sans-serif, Arial, Helvetica;
 }
-header, /*header I consider it the same as an id conceptually*/
-#navigation,
-#listbook {
+
+/***** /Generics *****/
+
+/***** setting box container ******/
+
+header,
+nav,
+section {
   position: relative;
   background-color: white;
-  padding: 10px 25px;
-  box-shadow: 5px 10px 5px #dedede;
+  box-shadow: 5px 7px 10px #05d8bc;
 }
+
+header {
+  padding: 15px 25px;
+}
+
+main#container {
+  width: 70vw;
+  margin: 5% auto;
+}
+
+#navigation,
+#listbook {
+  padding: 10px 40px;
+  margin: 5px;
+}
+#listbook details {
+  margin: 20px 0 40px;
+}
+
+/***** /setting box container ******/
+
+/***** content ******/
+
+/* Header content setting */
 #logo {
   display: inline-block;
   font-size: 48px;
@@ -23,18 +54,14 @@ header, /*header I consider it the same as an id conceptually*/
 #image {
   vertical-align: middle;
 }
-#container {
-  width: 70vw;
-  margin: 10% auto;
-  font-family: Arial, Helvetica, sans-serif;
-}
-#navigation,
-#listbook {
-  padding: 10px 40px;
-  margin: 5px;
-}
+/* /Header content setting */
+
+/* Navigation pulsant */
 .bot.one {
   background-color: hsl(204deg 86% 61%);
+}
+.one:hover {
+  background-color: chartreuse;
 }
 
 .bot {
@@ -45,54 +72,57 @@ header, /*header I consider it the same as an id conceptually*/
 .bot.two {
   border-color: #dedede;
 }
+/* Navigation pulsant */
 
-ul {
+/* list setting */
+#listbook ul {
   list-style: none;
   padding-inline-start: 0px;
 }
+#listbook li {
+  margin: 10px 0px;
+}
 
-.cross::before {
-  font-size: small;
+/* /list setting */
+
+/* icon list */
+#listbook li.check::before {
+  content: "\2713";
+  color: green;
+  border-color: green;
+}
+#listbook li.cross::before {
   content: "\2715";
   color: red;
-  border: 1px solid red;
-  padding: 2px 4.2px;
-  border-radius: 50%;
-  margin-right: 5px;
+  border-color: red;
 }
-.check::before {
-  font-size: small;
-  content: "\2713";
-  border: 1px solid green;
-  color: green;
-  padding: 2px 4.625px;
+#listbook li::before {
   border-radius: 50%;
+  font-size: 0.8rem;
   margin-right: 5px;
-}
-/*  because the element inserted before content, instead of be inside a specific container, I adjust the padding based on the font of the symbol used*/
-.triangle {
-  font-size: small;
+  text-align: center;
+  border: 1px solid;
   display: inline-block;
-  transform: rotate(45deg);
-  position: relative;
-  top: -5px;
+  width: 20px;
+  height: 20px;
 }
-.list {
-  margin: 20px 0px;
-}
-.li {
-  margin-bottom: 20px;
-}
-.sum {
-  font-size: x-large;
-}
+
+/* icon list */
+
+/***** /content ******/
+
+/***** Utilities *****/
+
+/* span list */
+
 .but {
-  font-size: 10px;
-  margin: 0 10px;
-  border-radius: 12px;
-  padding: 7px;
-  border: 0px;
-  color: white;
+  display: inline-block;
+  border-radius: 15px;
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 0.6rem;
+  margin: 0 30px;
 }
 .blue {
   background-color: hsl(203deg 80% 59%);
@@ -112,3 +142,11 @@ ul {
 .oliva {
   background-color: hsl(69deg 68% 47%);
 }
+
+/* /span list */
+
+#listbook strong {
+  font-size: 1.3em;
+}
+
+/***** /Utilities *****/
