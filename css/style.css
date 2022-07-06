@@ -12,14 +12,16 @@ header, /*header I consider it the same as an id conceptually*/
 #listbook {
   position: relative;
   background-color: white;
-  padding: 5px;
+  padding: 10px 25px;
   box-shadow: 5px 10px 5px #dedede;
 }
 #logo {
   display: inline-block;
   font-size: 48px;
-  position: absolute;
-  left: 56px;
+  vertical-align: middle;
+}
+#image {
+  vertical-align: middle;
 }
 #container {
   width: 70vw;
