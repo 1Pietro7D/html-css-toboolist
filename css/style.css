@@ -34,8 +34,8 @@ main#container {
 
 #navigation,
 #listbook {
-  padding: 10px 0 0.2% 40px; 
-  this fix avoids fullscreen blurring after translation, but i really don't understand why */
+  padding: 10px 0 0.2% 40px;
+  /* this fix avoids fullscreen blurring after translation, but i really don't understand why */
   margin-bottom: 5px;
 }
 #listbook details {
