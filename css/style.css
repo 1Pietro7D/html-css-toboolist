@@ -34,8 +34,9 @@ main#container {
 
 #navigation,
 #listbook {
-  padding: 10px 40px;
-  margin: 5px;
+  padding: 10px 0 0.2% 40px; 
+  this fix avoids fullscreen blurring after translation, but i really don't understand why */
+  margin-bottom: 5px;
 }
 #listbook details {
   margin: 20px 0 40px;
@@ -141,6 +142,10 @@ main#container {
 }
 .oliva {
   background-color: hsl(69deg 68% 47%);
+}
+.but:hover {
+  background-color: yellow;
+  color: red;
 }
 
 /* /span list */
